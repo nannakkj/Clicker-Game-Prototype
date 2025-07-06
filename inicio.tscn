@@ -1,0 +1,74 @@
+[gd_scene load_steps=2 format=3 uid="uid://di6ok2u6qkt1e"]
+
+[ext_resource type="Script" uid="uid://bhhwwvgxmbsdh" path="res://control.gd" id="1_ylum6"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ylum6")
+
+[node name="click" type="Button" parent="CanvasLayer/Control"]
+texture_filter = 6
+layout_mode = 0
+offset_left = 448.0
+offset_top = 464.0
+offset_right = 704.0
+offset_bottom = 576.0
+theme_override_font_sizes/font_size = 53
+text = "Clique"
+
+[node name="money" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_top = 16.0
+offset_right = 1152.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 28
+text = "+99999999999999999999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="time" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 472.0
+offset_right = 691.0
+offset_bottom = 495.0
+
+[node name="upgrade" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 104.0
+offset_right = 192.0
+offset_bottom = 192.0
+text = "Upgrade_ganho"
+
+[node name="upgrade2" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 256.0
+offset_right = 194.0
+offset_bottom = 344.0
+text = "Upgrade_tempo"
+
+[node name="upgrade_custo" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 160.0
+offset_right = 192.0
+offset_bottom = 200.0
+text = "Custo = 99999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="upgrade_custo2" type="Label" parent="CanvasLayer/Control"]
+offset_left = 64.0
+offset_top = 312.0
+offset_right = 192.0
+offset_bottom = 352.0
+text = "Custo = 99999"
+horizontal_alignment = 1
+vertical_alignment = 1
